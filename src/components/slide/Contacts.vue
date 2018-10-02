@@ -41,6 +41,9 @@ export default {
     h4,
     h6 {
       margin-bottom: 20px;
+      @media @xs {
+        width: 80%;
+      }
     }
     .buttons {
       display: flex;
@@ -48,7 +51,8 @@ export default {
       align-items: center;
       font-family: TT Norms Regular;
       @media @xs {
-        font-size: 14px;
+        font-size: 12px;
+        width: 80%;
       }
       .buttons-input {
         display: flex;
@@ -65,7 +69,8 @@ export default {
         padding-left: 15px;
         width: 500px;
         @media @xs {
-          margin-right: 0;
+          height: 26px;
+          font-size: 12px;
         }
       }
       .buttons-input:hover {
@@ -89,7 +94,8 @@ export default {
         }
         @media @xs {
           margin: 0;
-          margin-left: 15px;
+          padding: 5px 10px;
+          font-size: 12px;
         }
       }
       .btn-main:hover {
@@ -112,17 +118,18 @@ export default {
     position: absolute;
     font-family: TT Norms Medium;
     top: 90%;
-    right: 8%;
+    right: 10%;
     color: rgba(0, 0, 0, 0.3);
     -webkit-transition: color @time ease-in;
     transition: color @time ease-in;
     font-size: 18px;
     cursor: pointer;
-    margin-right: 8%;
-    margin-bottom: 5%;
+    margin-right: 4.5%;
+    margin-bottom: 5.5%;
     @media @xs {
       margin-right: 0;
-      right: 100px;
+      right: 14%;
+      top: 90%;
       font-size: 16px;
     }
   }

@@ -41,6 +41,9 @@ export default {
     h6 {
       margin-bottom: 20px;
       margin-top: 12px;
+      @media @xs {
+        width: 65%;
+      }
     }
 
   }
@@ -59,10 +62,9 @@ export default {
       left: 50%;
       top: 0;
       @media @xs {
-        left: 50%;
         width: 75%;
-        left: 65%;
-        top: 30%;
+        left: 52%;
+        top: 10%;
         z-index: 0;
       }
     }

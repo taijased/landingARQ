@@ -62,12 +62,14 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      z-index: 1;
       @media @xs {
+        width: auto;
         margin: 0;
-        margin-top: 40px;
-        margin-left: 20px;
+        margin-left: 8%;
+        justify-content: flex-start;
         h4 {
-          font-size: 20px;
+          font-size: 16px;
         }
       }
       .my-collapse-item {
@@ -88,9 +90,8 @@ export default {
             transition: color @time-description ease-in;
             font-size: 12px;
             @media @xs {
-              left: 0;
-              top: 0;
-              margin-right: 10px;
+              left: -12px;
+              top: -8px;
             }
           }
           @wb: 30px;
@@ -100,6 +101,9 @@ export default {
             height: 2px;
             margin-right: 12px;
             margin-bottom: 0.35rem;
+            @media @xs {
+              margin-bottom: 0.6rem;
+            }
             background: @purple;
           }
           .border-enter {
@@ -127,7 +131,7 @@ export default {
           padding: 0 12px;
           height: 60px;
           @media @xs {
-            width: 85%;
+            width: 80%;
             margin-bottom: 15px;
           }
         }
@@ -166,8 +170,8 @@ export default {
       top:0;
       @media @xs {
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -15%;
+        left: -5%;
       }
     }
     img {

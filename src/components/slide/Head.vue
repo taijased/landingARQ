@@ -63,6 +63,9 @@ export default {};
     h6 {
       margin-bottom: 20px;
       margin-top: 12px;
+      @media @xs {
+        width: 100%;
+      }
     }
     h4 {
       line-height: 22px;
@@ -82,6 +85,16 @@ export default {};
         margin-right: 20px;
         background: rgba(61, 69, 238, 1);
         transition: background @time-description ease-in;
+        @media @xs {
+          margin: 0;
+          padding: 7px 15px;
+          margin-right: 10px;
+          font-size: 10px;
+          svg {
+            width: 12.5px;
+            height: 12.5px;
+          }
+        }
         .btn-title {
           color: white;
           margin-left: 5px;
@@ -111,8 +124,8 @@ export default {};
       top: -1%;
       @media @xs {
         width: 75%;
-        left: 65%;
-        top: 30%;
+        left: 51%;
+        top: 10%;
         z-index: 2;
       }
     }

@@ -49,15 +49,23 @@ export default {
 };
 </script>
 <style lang="less">
+@xs: ~'(max-width:576px)';
 h4 {
   font-family: TT Norms Medium !important;
   font-size: 20px;
   line-height: 30px;
+  @media @xs {
+    font-size: 16px;
+  }
 }
 h6 {
   font-family: TT Norms Regular !important;
   font-size: 16px;
   line-height: 20px;
+  @media @xs {
+    font-size: 12px;
+    width: 90%;
+  }
 }
 
 .swiper-container {
@@ -94,5 +102,10 @@ h6 {
 }
 .swiper-slide-next > .container {
   display: none !important;
+}
+@media @xs {
+  .swiper-pagination {
+    display: none;
+  }
 }
 </style>
