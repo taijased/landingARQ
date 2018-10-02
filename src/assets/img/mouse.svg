@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="60px" viewBox="0 0 40 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>mouse</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="mouse" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#000000" stroke-width="3" x="1.5" y="1.5" width="37" height="57" rx="18.5"></rect>
+        <rect id="Rectangle-Copy" fill="#000000" x="18" y="12" width="4" height="10" rx="2"></rect>
+    </g>
+</svg>

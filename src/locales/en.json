@@ -1,0 +1,67 @@
+{
+  "blind": {
+    "description": "New adventure experience that changes the world around you."
+  },
+  "internationalization": {
+    "title": "Русская версия"
+  },
+  "scroll": {
+    "down": "Scroll down",
+    "up": "Scroll up"
+
+  },
+  "head": {
+    "title": "A world of quests <br> in your pocket",
+    "subtitle": "New adventure experience that changes the <br> world around you.",
+    "buttons-title": "Soon"
+  },
+  "about": {
+    "title": "What is",
+    "description": "Augmented reality location-based adventures <br> store. Your stories are real as never before."
+  },
+  "features": {
+    "item-1": {
+      "title": "Huge variety of quests",
+      "description": "City adventures, sightseeing, team quests and much more"
+    },
+    "item-2": {
+      "title": "Quests around you",
+      "description": "Interact with any legend, myth or universe in your augmented reality"
+    },
+    "item-3": {
+      "title": "Interactive characters",
+      "description": "Mysteries and adventures come to life and travel with you wherever you want"
+    },
+    "item-4": {
+      "title": "Time travel",
+      "description": "Look into the future and explore the past to see the world you’ve never seen before"
+    },
+    "item-5": {
+      "title": "Self-learning",
+      "description": "Communicate with other players and share quests. Complete missions with friends or family"
+    },
+    "item-6": {
+      "title": "Social activity",
+      "description": "Learn, look for clues and earn tokens to unblock new levels"
+    }
+  },
+  "ui": {
+    "item-1": {
+      "title": "Simplicity",
+      "description": "Built for everyone - feel comfortable in our interface."
+    },
+    "item-2": {
+      "title": "Efficiency",
+      "description": "We work hard to make battery and internet traffic consumption less and to reduce file sizes."
+    },
+    "item-3": {
+      "title": "High performance",
+      "description": "Built individually for each platform to make user interface as friendly as possible."
+    }
+  },
+  "contacts": {
+    "title": "Stay in touch",
+    "description": "Subscribe to updates and be the first to explore adventures in augmented reality.",
+    "subscribe": "Subscribe"
+  }
+}
