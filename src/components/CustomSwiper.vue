@@ -18,7 +18,6 @@
     <div class="swiper-pagination" slot="pagination"></div>
   </swiper>
 </template>
-
 <script>
 import AppHead from "./slide/Head";
 import About from "./slide/About";
@@ -87,14 +86,13 @@ h6 {
   background: #3d45ee;
   transition: width 0.3s;
 }
-// .swiper-slide-active {
-//   display: block;
-//   .swiper-slide-next {
-//   display: none;
-//   }
-//   .swiper-slide-prev {
-//     display: none;
-//   }
-// }
-
+.swiper-slide-active > .container {
+  display: block !important;
+}
+.swiper-slide-prev > .container {
+  display: none !important;
+}
+.swiper-slide-next > .container {
+  display: none !important;
+}
 </style>

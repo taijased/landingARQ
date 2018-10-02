@@ -25,6 +25,7 @@ export default {
 @lb: 30%;
 @rb: 70%;
 @xs: ~'(max-width:576px)';
+@time: 1s;
 
 .container {
   display: flex;
@@ -58,7 +59,7 @@ export default {
         outline: none;
         border: none;
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        transition: box-shadow 0.5s ease-in;
+        transition: box-shadow @time ease-in;
         margin-right: 15px;
         height: 37px;
         padding-left: 15px;
@@ -69,7 +70,7 @@ export default {
       }
       .buttons-input:hover {
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        transition: box-shadow 0.5s ease-in;
+        transition: box-shadow @time ease-in;
         // color: rgba(0,0,0,1);
         // transition: color 0.5s ease-in;
       }
@@ -79,7 +80,7 @@ export default {
         align-items: center;
         justify-content: center;
         background: rgba(61, 69, 238, 1);
-        transition: background 0.2s ease-in;
+        transition: background @time ease-in;
         border-radius: 50px;
         padding: 10px 20px;
         .btn-title {
@@ -94,7 +95,7 @@ export default {
       .btn-main:hover {
         cursor: pointer;
         background: rgba(61, 69, 238, 0.7);
-        transition: background 0.2s ease-in;
+        transition: background @time ease-in;
       }
     }
   }
@@ -113,8 +114,8 @@ export default {
     top: 90%;
     right: 8%;
     color: rgba(0, 0, 0, 0.3);
-    -webkit-transition: color 0.6s ease-in;
-    transition: color 0.6s ease-in;
+    -webkit-transition: color @time ease-in;
+    transition: color @time ease-in;
     font-size: 18px;
     cursor: pointer;
     margin-right: 8%;
@@ -127,12 +128,12 @@ export default {
   }
   .email:hover {
     color: rgba(0, 0, 0, 1);
-    transition: color 0.6s ease-in;
+    transition: color @time ease-in;
   }
 }
 .fade-in-left {
-  -webkit-animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in-left @time cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-left @time cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes fade-in-left {

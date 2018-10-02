@@ -42,6 +42,8 @@ export default {
 @rb: 65%;
 @purple: rgba(61, 69, 238, 1);
 @xs: ~"(max-width:576px)";
+@time: 1s;
+@time-description: .25s;
 .container {
   display: flex;
   flex-direction: row;
@@ -77,7 +79,7 @@ export default {
           flex-direction: row;
           align-items: flex-end;
           color: rgba(0, 0, 0, 0.3);
-          transition: color 0.25s ease-in-out;
+          transition: color @time-description ease-in-out;
           margin-left: -15px;
           line-height: 1;
           .my-collapse-item-title-index {
@@ -86,7 +88,7 @@ export default {
             top: -3.5px;
             font-family: TT Norms Regular;
             color: rgba(0, 0, 0, 1);
-            transition: color 0.25s ease-in;
+            transition: color @time-description ease-in;
             font-size: 12px;
             @media @xs {
               left: 0;
@@ -107,7 +109,7 @@ export default {
             width: 0;
           }
           .border-enter-active {
-            transition: width 0.2s ease;
+            transition: width @time-description ease;
           }
           .border-enter-to {
             width: @wb;
@@ -116,7 +118,7 @@ export default {
             width: @wb;
           }
           .border-leave-active {
-            transition: width 0.2s ease;
+            transition: width @time-description ease;
           }
           .border-leave-to {
             width: 0;
@@ -134,7 +136,7 @@ export default {
         }
         .active {
           color: @purple;
-          transition: color 0.5s ease-in;
+          transition: color @time-description ease-in;
         }
       }
     }
@@ -156,7 +158,7 @@ export default {
       position: absolute;
       width: 50%;
       height: 100%;
-      background: url(/static/img/3.d1f7962.png);
+      background: url(../../assets/img/3.png);
       background-repeat: no-repeat;
       background-size: 100%;
       top: 4%;
@@ -173,8 +175,8 @@ export default {
   }
 }
 .fade-in-left {
-  -webkit-animation: fade-in-left 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-left 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-left @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-left @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in-left {
@@ -202,8 +204,8 @@ export default {
   }
 }
 .fade-in-br {
-  -webkit-animation: fade-in-br 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-br 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-br @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-br @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @-webkit-keyframes fade-in-br {
   0% {
@@ -230,8 +232,8 @@ export default {
   }
 }
 .fade-in-fwd {
-  -webkit-animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-fwd @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-fwd @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in-fwd {
@@ -260,22 +262,22 @@ export default {
 }
 
 .slide-in-top {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-top @time-description cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top @time-description cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slide-in-top-reverse {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-in-top @time cubic-bezier(0.25, 0.46, 0.45, 0.94)
     reverse both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+  animation: slide-in-top @time cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
 }
 .slide-in-top-enter-active {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-top @time cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top @time cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .slide-in-top-leave-active {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-in-top @time cubic-bezier(0.25, 0.46, 0.45, 0.94)
     reverse both;
-  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+  animation: slide-in-top @time cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
 }
 
 @-webkit-keyframes slide-in-top {
@@ -303,9 +305,9 @@ export default {
   }
 }
 .slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: slide-in-left @time cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left @time cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes slide-in-left {
   0% {

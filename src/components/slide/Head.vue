@@ -45,6 +45,8 @@ export default {};
 @lb: 35%;
 @rb: 65%;
 @xs: ~"(max-width:576px)";
+@time: 1s;
+@time-description: .25s;
 .container {
   display: flex;
   flex-direction: row;
@@ -79,7 +81,7 @@ export default {};
         padding: 10px 20px;
         margin-right: 20px;
         background: rgba(61, 69, 238, 1);
-        transition: background 0.3s ease-in;
+        transition: background @time-description ease-in;
         .btn-title {
           color: white;
           margin-left: 5px;
@@ -88,7 +90,7 @@ export default {};
       .btn-main:hover {
         cursor: pointer;
         background: rgba(61, 69, 238, 0.7);
-        transition: background 0.3s ease-in;
+        transition: background @time-description ease-in;
       }
     }
   }
@@ -102,7 +104,7 @@ export default {};
       position: absolute;
       width: 26%;
       height: 100%;
-      background: url(/static/img/1.8ec4c12.png);
+      background: url(../../assets/img/1.png);
       background-repeat: no-repeat;
       background-size: 100%;
       left: 50%;
@@ -120,8 +122,8 @@ export default {};
   }
 }
 .fade-in-left {
-  -webkit-animation: fade-in-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-left @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-left @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes fade-in-left {
@@ -149,8 +151,8 @@ export default {};
   }
 }
 .fade-in-br {
-  -webkit-animation: fade-in-br 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in-br 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in-br @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-br @time cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @-webkit-keyframes fade-in-br {
   0% {

@@ -19,7 +19,7 @@ export default {
 @lb: 35%;
 @rb: 65%;
 @xs: ~'(max-width:576px)';
-
+@time: 1s;
 .container {
   display: flex;
   flex-direction: row;
@@ -57,6 +57,7 @@ export default {
       background-repeat: no-repeat;
       background-size: cover;
       left: 50%;
+      top: 0;
       @media @xs {
         left: 50%;
         width: 75%;
@@ -74,8 +75,8 @@ export default {
   }
 }
 .fade-in-left {
-  -webkit-animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: fade-in-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: fade-in-left @time cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-left @time cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @-webkit-keyframes fade-in-left {
